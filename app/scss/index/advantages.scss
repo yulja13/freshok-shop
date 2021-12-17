@@ -1,0 +1,44 @@
+.advantages {
+	padding: 48px 0 29px;
+	background-color: $silver-100;
+	letter-spacing: normal;
+
+	&__list {
+		display: flex;
+		justify-content:center;
+	}
+
+	&__item {
+		max-width: 263px;
+		width: 100%;
+		padding-left: 75px;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		&:not(:last-child) {
+			margin-right: 66px;
+		}
+
+		&--delivery {
+			background-image: url('../images/ADVANTAGES/scooter.svg');
+		}
+
+		&--return {
+			background-image: url('../images/ADVANTAGES/return.svg');
+		}
+
+		&--support {
+			background-image: url('../images/ADVANTAGES/hours.svg');
+		}
+	}
+
+	&__header {
+		font-size: 16px;
+		@extend %opensans-600;
+		color: $dark-900;
+		margin-bottom: 7px;
+	}
+
+	&__text {
+		color: $dark-500;
+	}
+}

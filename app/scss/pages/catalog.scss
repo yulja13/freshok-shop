@@ -1,0 +1,148 @@
+
+// =========top=================
+.top {
+  padding: 24px 0;
+  background-color: $silver-100;
+}
+// =================shop======================
+
+.shop {
+  padding: 48px 0 72px;
+  color: $dark-500;
+
+  &__title {
+    @extend %ruda-700;
+    font-size: 42px;
+    line-height: 1.2;
+    color: $dark-900;
+    margin-bottom: 48px;
+    letter-spacing: 0.03em;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__filters {
+    width: 300px;
+    margin-right: 32px;
+  }
+
+}
+
+.filter {
+  font-size: 18px;
+  line-height: 130%;
+  
+
+  &__item-title {
+    position: relative;
+    width: 100%;
+    padding: 18px;
+  }
+
+  &__item-arrow {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    transform: rotate(-90deg);
+    width: 10px;
+    height: 18px;
+    fill: $silver-600;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    min-height: 65px;
+    border: 1px solid $silver-600;
+    border-radius: 6px;
+  }
+
+  &__item-content {
+    border-top: 1px solid $silver-600;
+    padding: 18px;
+  }
+
+  &__item-content--scroll {
+    height: 300px;
+  }
+
+  &__name {
+    @extend %ruda-400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $dark-900;
+    text-align-last: left;
+  }
+}
+.filter-category {
+
+  &__label {
+    display: block;
+		cursor: pointer;
+    margin-bottom: 12px;
+  }
+
+  &__label:last-child {
+    margin-bottom: 0;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+  }
+}
+
+.filter-offer {
+
+  &__label {
+  display: flex;
+  padding-bottom: 12px;
+  
+  &:last-child {
+    padding-bottom: 0;
+  }
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked + .filter-offer__checkbox {
+      background-image: url('../../images/sprite.svg#checked');
+      @extend %bg;
+      background-size: 15px 12px;
+      border: 1px solid $dark-500;
+    }
+
+  }
+
+  &__box {
+    margin-right: 12px;
+  }
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: $silver-100;
+    border: 1px solid $silver-600;
+  }
+}
+
+
+
+.simplebar-scrollbar .simplebar-visible {
+  height: 129px;
+}
+
+.simplebar-scrollbar:before {
+  background: #C4C4C4;
+}
+
+.shop-content {
+  width: 100%;
+
+  &__filter {
+    margin-bottom: 48px;
+  }
+
+}
