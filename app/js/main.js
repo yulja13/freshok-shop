@@ -2,6 +2,14 @@
 
 $(function(){
 
+  $('.product-slide').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     onStart: function (data) {
@@ -33,7 +41,7 @@ $(function(){
 
 // -------------------------------------------------------------------
 
-  $('.shop-content-select-style').styler();
+  $('.shop-content-select-style, .product-one__input').styler();
 
 
   $('.top-slider__inner').slick({

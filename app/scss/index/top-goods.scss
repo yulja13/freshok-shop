@@ -111,20 +111,7 @@
 	&__subtitle {
 		display: none;
 
-		.badge-stock {
-			font-weight: 600;
-			font-size: 10px;
-			line-height: 1;
-			&--instock {
-				color: $green-900;
-			}
-			&--outofstock {
-				color: $silver-600;
-			}
-			&--runnout {
-				color: $red-900;
-			}
-		}
+		
 	}
 	
 	&__rating {
