@@ -89,7 +89,7 @@ body {
 	padding: 0;
 	white-space: nowrap;
 	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
+	clip: rect(0,0,0,0);
 	overflow: hidden;
 }
 
@@ -195,7 +195,15 @@ body {
 		display: flex;
 		line-height: 1.2;
 		color: $dark-500;
-		
+	}
+
+	&__link {
+		outline: none;
+
+		&:focus {
+			box-shadow: 0px 0px 0px 3px #E0EDCF;
+			border-radius: 3px;
+		}
 	}
 
 	&__item {
@@ -231,7 +239,6 @@ body {
 
 	&__list {
 		display: flex;
-		
 	}
 
 	&__arrows,
@@ -239,7 +246,6 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
 		background-color: $silver-100;
 		width: 48px;
 		height: 48px;
@@ -272,8 +278,6 @@ body {
 	}
 
 	&__next {
-		
-
 		&::before {
 			background-image: url('../images/icons/arrow_right.svg');
 		}

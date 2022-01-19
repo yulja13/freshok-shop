@@ -267,6 +267,7 @@
       flex-direction: column-reverse;
       justify-content: flex-end;
       align-self: flex-start;
+      // width: 178px;
       
     }
 
@@ -292,6 +293,7 @@
       flex-direction: column-reverse;
       justify-content: flex-end;
       align-self: flex-start;
+      width: 178px;
     }
 
     .product-card__title {
@@ -400,5 +402,24 @@
   @extend %bg;
   filter: invert(92%) sepia(9%) saturate(0%) hue-rotate(131deg) brightness(89%) contrast(82%);
   transform: rotate(90deg);
+}
+
+.jq-selectbox li, .jq-select-multiple li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.jq-selectbox__dropdown {
+  background-color: #fff;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 1px 8px rgb(0 0 0 / 25%);
+}
+
+.jq-selectbox li {
+  &:hover {
+    color: rgb(9, 177, 65);
+  }
 }
 
